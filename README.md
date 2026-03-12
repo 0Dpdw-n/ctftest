@@ -1,0 +1,2 @@
+# ctftest
+Redirect test
